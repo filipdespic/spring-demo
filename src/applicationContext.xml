@@ -14,12 +14,17 @@
 	</bean>
 
 
-	<bean id="myCoach"
-		class="com.luv2.code.springdemo.TrackCoach">
+	<bean id="myCoach" class="com.luv2.code.springdemo.TrackCoach">
 
 		<!-- set up constructor injection -->
 		<constructor-arg ref="myFortune" />
 
+	</bean>
+	
+	<bean id="myCricketCoach"
+		class="com.luv2.code.springdemo.CricketCoach">
+
+		<property name="fortuneService" ref="myFortune" />
 	</bean>
 
 </beans>
