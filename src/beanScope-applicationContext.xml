@@ -14,11 +14,11 @@
 	</bean>
 
 
-	<bean id="myCoach" class="com.luv2.code.springdemo.TrackCoach" scope="prototype">
+	<bean id="myCoach" class="com.luv2.code.springdemo.BaseballCoach" scope="prototype">
 
 		<!-- set up constructor injection -->
 		<constructor-arg ref="myFortune" />
-
+	
 	</bean>
 	 
 
